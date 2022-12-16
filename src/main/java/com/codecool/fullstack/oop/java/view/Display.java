@@ -53,7 +53,7 @@ public class Display {
         for (int i = 1; i <= board.getSizeX(); i++) {
             System.out.print(i + "  ");
         }
-        System.out.println();
+        System.out.println();//asd
         for (int row = 0; row < board.getSizeX(); row++) {
             if (row < 10) {
                 System.out.print(row + 1 + "   ");
