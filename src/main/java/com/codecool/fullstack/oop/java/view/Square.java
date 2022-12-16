@@ -34,9 +34,7 @@ public class Square {
         char result=' ';
         switch (squareStatus) {
 
-            case EMPTY :
-                result = 'E';
-                break;
+
             case HIT:
                 result = 'H';
                 break;
