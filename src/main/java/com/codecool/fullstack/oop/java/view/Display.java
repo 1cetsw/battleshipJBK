@@ -50,15 +50,15 @@ public class Display {
     public void printBoard(Board board) {
         System.out.print("    ");
 
-        for (int i = 0; i < board.getSizeX(); i++) {
+        for (int i = 1; i <= board.getSizeX(); i++) {
             System.out.print(i + "  ");
         }
         System.out.println();
         for (int row = 0; row < board.getSizeX(); row++) {
             if (row < 10) {
-                System.out.print(row + "   ");
+                System.out.print(row + 1 + "   ");
             } else {
-                System.out.print(row);
+                System.out.print(row + 1);
             }
 
             for (int col = 0; col < board.getSizeY(); col++) {
