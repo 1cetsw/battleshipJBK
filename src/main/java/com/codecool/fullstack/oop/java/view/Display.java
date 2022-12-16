@@ -15,14 +15,14 @@ public class Display {
     public void printMenu() {
         System.out.println("BattleshipJBK is starting........ ");
         System.out.println(" \n" +
-                "▀█████████▄     ▄████████     ███         ███      ▄█          ▄████████    ▄████████    ▄█    █▄     ▄█     ▄███████▄ \n" +
-                "  ███    ███   ███    ███ ▀█████████▄ ▀█████████▄ ███         ███    ███   ███    ███   ███    ███   ███    ███    ███ \n" +
-                "  ███    ███   ███    ███    ▀███▀▀██    ▀███▀▀██ ███         ███    █▀    ███    █▀    ███    ███   ███▌   ███    ███ \n" +
-                " ▄███▄▄▄██▀    ███    ███     ███   ▀     ███   ▀ ███        ▄███▄▄▄       ███         ▄███▄▄▄▄███▄▄ ███▌   ███    ███ \n" +
-                "▀▀███▀▀▀██▄  ▀███████████     ███         ███     ███       ▀▀███▀▀▀     ▀███████████ ▀▀███▀▀▀▀███▀  ███▌ ▀█████████▀  \n" +
-                "  ███    ██▄   ███    ███     ███         ███     ███         ███    █▄           ███   ███    ███   ███    ███        \n" +
-                "  ███    ███   ███    ███     ███         ███     ███▌    ▄   ███    ███    ▄█    ███   ███    ███   ███    ███        \n" +
-                "▄█████████▀    ███    █▀     ▄████▀      ▄████▀   █████▄▄██   ██████████  ▄████████▀    ███    █▀    █▀    ▄████▀    ");
+                " _           _   _   _           _     _       \n" +
+                "| |         | | | | | |         | |   (_)      \n" +
+                "| |__   __ _| |_| |_| | ___  ___| |__  _ _ __  \n" +
+                "| '_ \\ / _` | __| __| |/ _ \\/ __| '_ \\| | '_ \\ \n" +
+                "| |_) | (_| | |_| |_| |  __/\\__ \\ | | | | |_) |\n" +
+                "|_.__/ \\__,_|\\__|\\__|_|\\___||___/_| |_|_| .__/ \n" +
+                "                                        | |    \n" +
+                "                                        |_|  ");
 
     }
 
@@ -33,12 +33,12 @@ public class Display {
     public void printMainMenuOptions() {
         System.out.println("Press:\n" +
                 "\t 1 - Play\n" +
-                "\t 2 - Print game rolls\n" +
+                "\t 2 - Game rolls\n" +
                 "\t 3 - Exit game\n");
     }
 
     public void printExitMessage() {
-        System.out.println("Have a nice day ahead!");
+        System.out.println("Have a nice day !");
 
     }
     public void gameRules() {
@@ -64,19 +64,19 @@ public class Display {
             for (int col = 0; col < board.getSizeY(); col++) {
                 switch (board.getSquare(row, col).getCharacter()) {
                     case 'O':
-                        System.out.print(BLUE_BACKGROUND + "  " + RESET + " ");
+                        System.out.print("\uD83C\uDF0A" +  " ");
                         break;
                     case 'H':
-                        System.out.print(RED_BACKGROUND + "  " + RESET + " ");
+                        System.out.print( "\uD83D\uDD25" + " ");
                         break;
                     case 'S':
-                        System.out.print(YELLOW_BACKGROUND + "  " + RESET + " ");
+                        System.out.print("\uD83D\uDEA4" + " ");
                         break;
                     case 'E':
-                        System.out.print(CYAN_BACKGROUND + "  " + RESET + " ");
+                        System.out.print(BLACK_BACKGROUND + "  " + RESET + " ");
                         break;
                     case 'M':
-                        System.out.print(BLACK_BACKGROUND + "  " + RESET + " ");
+                        System.out.print(CYAN_BACKGROUND + "  " + RESET + " ");
                         break;
                 }
 

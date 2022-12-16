@@ -1,17 +1,16 @@
 package com.codecool.fullstack.oop.java.game;
 
 
-import com.codecool.fullstack.oop.java.game.Game;
 import com.codecool.fullstack.oop.java.utils.Input;
 import com.codecool.fullstack.oop.java.view.Display;
 
-public class Battleship {
+public class Menu {
     private Display display;
-    private Game game = new Game();
+    private GameLogic gameLogic = new GameLogic();
     private Input input;
 
 
-    public Battleship() {
+    public Menu() {
         display = new Display();
     }
 
@@ -34,7 +33,7 @@ public class Battleship {
             switch (choice) {
                 case 1: //play game
                     display.printMessages("You chose to play game ");
-                    game.addShipsToEmptyBoard();
+                    gameLogic.addShipsToEmptyBoard();
 
                     break;
                 case 2: //print rules

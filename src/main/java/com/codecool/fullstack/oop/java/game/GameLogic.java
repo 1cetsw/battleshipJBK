@@ -9,7 +9,7 @@ import com.codecool.fullstack.oop.java.view.Display;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game {
+public class GameLogic {
 
     private List<Ship> shipsPlayer1 = new ArrayList<>();
     private List<Ship> shipsPlayer2 = new ArrayList<>();
