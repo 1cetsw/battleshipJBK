@@ -72,9 +72,7 @@ public class Display {
                     case 'S':
                         System.out.print("\uD83D\uDEA4" + " ");
                         break;
-                    case 'E':
-                        System.out.print(BLACK_BACKGROUND + "  " + RESET + " ");
-                        break;
+
                     case 'M':
                         System.out.print(CYAN_BACKGROUND + "  " + RESET + " ");
                         break;
