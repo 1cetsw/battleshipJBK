@@ -1,4 +1,4 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.utils;
 
 public class Color {
     // Reset

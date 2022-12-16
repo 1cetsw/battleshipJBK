@@ -1,4 +1,7 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.ship;
+
+import com.codecool.fullstack.oop.java.view.Board;
+import com.codecool.fullstack.oop.java.view.Square;
 
 import java.util.List;
 

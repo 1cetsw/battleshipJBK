@@ -1,4 +1,10 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.utils;
+
+import com.codecool.fullstack.oop.java.ship.Ship;
+import com.codecool.fullstack.oop.java.ship.ShipType;
+import com.codecool.fullstack.oop.java.view.Board;
+import com.codecool.fullstack.oop.java.view.Square;
+import com.codecool.fullstack.oop.java.view.SquareStatus;
 
 import java.util.ArrayList;
 import java.util.List;

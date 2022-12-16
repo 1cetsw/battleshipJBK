@@ -1,6 +1,10 @@
 package com.codecool.fullstack.oop.java;
 
 
+import com.codecool.fullstack.oop.java.game.Game;
+import com.codecool.fullstack.oop.java.utils.Input;
+import com.codecool.fullstack.oop.java.view.Display;
+
 public class Battleship {
     private Display display;
     private Game game = new Game();

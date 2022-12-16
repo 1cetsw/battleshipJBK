@@ -1,7 +1,7 @@
-package com.codecool.fullstack.oop.java;
-import com.codecool.fullstack.oop.java.Color.*;
+package com.codecool.fullstack.oop.java.view;
+import com.codecool.fullstack.oop.java.view.Board;
 
-import static com.codecool.fullstack.oop.java.Color.*;
+import static com.codecool.fullstack.oop.java.utils.Color.*;
 
 
 

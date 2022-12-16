@@ -1,4 +1,10 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.game;
+
+import com.codecool.fullstack.oop.java.player.Player;
+import com.codecool.fullstack.oop.java.ship.Ship;
+import com.codecool.fullstack.oop.java.utils.Input;
+import com.codecool.fullstack.oop.java.view.Board;
+import com.codecool.fullstack.oop.java.view.Display;
 
 import java.util.ArrayList;
 import java.util.List;

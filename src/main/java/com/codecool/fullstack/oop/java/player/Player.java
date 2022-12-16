@@ -1,8 +1,10 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.player;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
+import com.codecool.fullstack.oop.java.ship.Ship;
+import com.codecool.fullstack.oop.java.view.Board;
+import com.codecool.fullstack.oop.java.view.Square;
+import com.codecool.fullstack.oop.java.view.SquareStatus;
+
 import java.util.List;
 
 public class Player {

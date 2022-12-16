@@ -1,6 +1,7 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.view;
 
 
+import com.codecool.fullstack.oop.java.ship.Ship;
 
 public class Board {
     private int sizeX;
@@ -29,7 +30,7 @@ public class Board {
         matrix = new Square[sizeX][sizeY];
         for (int row=0; row< x; row++) {
             for(int col= 0; col< y; col++) {
-                matrix[row][col] = new Square(row,col,SquareStatus.OCEAN);
+                matrix[row][col] = new Square(row,col, SquareStatus.OCEAN);
             }
         }
         return  matrix;
@@ -37,7 +38,7 @@ public class Board {
 
 
 
-    public void placeShip(Square square,Ship ship) {
+    public void placeShip(Square square, Ship ship) {
         switch (ship.getShipType().label){
             case 1:
                 square.setSquareStatus(SquareStatus.SHIP);

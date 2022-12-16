@@ -1,4 +1,5 @@
-package com.codecool.fullstack.oop.java;
+package com.codecool.fullstack.oop.java.view;
+
 public class Square {
 
     private int x;
