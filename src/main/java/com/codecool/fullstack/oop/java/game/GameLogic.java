@@ -43,8 +43,8 @@ public class GameLogic {
             shipsPlayer2.add(one);
         }
 
-        Player player1 = new Player(shipsPlayer1,boardPLayer2);
-        Player player2 = new Player(shipsPlayer2,boardPLayer1);
+        Player player1 = new Player(shipsPlayer1,boardPLayer1);
+        Player player2 = new Player(shipsPlayer2,boardPLayer2);
         Boolean gameOn = true;
         Display display = new Display();
         display.printBoard(boardPLayer1);
@@ -58,41 +58,41 @@ public class GameLogic {
         display.clearscreen();
         while(gameOn) {
             int[] ShootCoordinates ;
-            display.printBoard(player1.getBoard());
-            ShootCoordinates = board1.shoot(0);
-            if(player1.handleShot(ShootCoordinates[0],ShootCoordinates[1])) {
-                display.printBoard(player1.getBoard());
-                System.out.println("Press Enter to continue");
-                scanner.nextLine();
-                display.clearscreen();
-                numberOfShipsPlayer2--;
-            } else {
-                display.printBoard(player1.getBoard());
-                System.out.println("Press Enter to continue");
-                scanner.nextLine();
-                display.clearscreen();
-            }
-            if (numberOfShipsPlayer2 == 0) {
-                display.printBoard(player1.getBoard());
-                System.out.println("player 1 wins!");
-                break;
-            }
             display.printBoard(player2.getBoard());
-            ShootCoordinates = board2.shoot(1);
+            ShootCoordinates = board2.shoot(0);
             if(player2.handleShot(ShootCoordinates[0],ShootCoordinates[1])) {
                 display.printBoard(player2.getBoard());
                 System.out.println("Press Enter to continue");
                 scanner.nextLine();
                 display.clearscreen();
-                numberOfShipsPlayer1--;
-            }  else {
+                numberOfShipsPlayer2--;
+            } else {
                 display.printBoard(player2.getBoard());
                 System.out.println("Press Enter to continue");
                 scanner.nextLine();
                 display.clearscreen();
             }
-            if(numberOfShipsPlayer1 == 0) {
+            if (numberOfShipsPlayer2 == 0) {
                 display.printBoard(player2.getBoard());
+                System.out.println("player 1 wins!");
+                break;
+            }
+            display.printBoard(player1.getBoard());
+            ShootCoordinates = board1.shoot(1);
+            if(player1.handleShot(ShootCoordinates[0],ShootCoordinates[1])) {
+                display.printBoard(player1.getBoard());
+                System.out.println("Press Enter to continue");
+                scanner.nextLine();
+                display.clearscreen();
+                numberOfShipsPlayer1--;
+            }  else {
+                display.printBoard(player1.getBoard());
+                System.out.println("Press Enter to continue");
+                scanner.nextLine();
+                display.clearscreen();
+            }
+            if(numberOfShipsPlayer1 == 0) {
+                display.printBoard(player1.getBoard());
                 System.out.println("player 2 wins!");
                 break;
             }
