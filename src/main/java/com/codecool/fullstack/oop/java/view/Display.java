@@ -1,8 +1,8 @@
 package com.codecool.fullstack.oop.java.view;
+
 import com.codecool.fullstack.oop.java.view.Board;
 
 import static com.codecool.fullstack.oop.java.utils.Color.*;
-
 
 
 public class Display {
@@ -41,6 +41,7 @@ public class Display {
         System.out.println("Have a nice day !");
 
     }
+
     public void gameRules() {
         System.out.println("Each ship must be placed horizontally or vertically across grid spaces—not diagonally—and the ships can't hang off the grid. \n" +
                 "Ships can touch each other, but they can't occupy the same grid space.\n" +
@@ -50,24 +51,24 @@ public class Display {
     public void printBoard(Board board) {
         System.out.print("    ");
 
-        for (int i = 1; i <= board.getSizeX(); i++) {
+        for (int i = 0; i < board.getSizeX(); i++) {
             System.out.print(i + "  ");
         }
         System.out.println();//asd
         for (int row = 0; row < board.getSizeX(); row++) {
             if (row < 10) {
-                System.out.print(row + 1 + "   ");
+                System.out.print(row + "   ");
             } else {
-                System.out.print(row + 1);
+                System.out.print(row);
             }
 
             for (int col = 0; col < board.getSizeY(); col++) {
                 switch (board.getSquare(row, col).getCharacter()) {
                     case 'O':
-                        System.out.print("\uD83C\uDF0A" +  " ");
+                        System.out.print("\uD83C\uDF0A" + " ");
                         break;
                     case 'H':
-                        System.out.print( "\uD83D\uDD25" + " ");
+                        System.out.print("\uD83D\uDD25" + " ");
                         break;
                     case 'S':
                         System.out.print("\uD83D\uDEA4" + " ");
@@ -81,6 +82,12 @@ public class Display {
             }
             System.out.println();
 
+        }
+    }
+
+    public void clearscreen() {
+        for (int i = 0; i<20; i++){
+            System.out.print("\n");
         }
     }
 }

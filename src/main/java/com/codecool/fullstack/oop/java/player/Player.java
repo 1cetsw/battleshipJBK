@@ -6,6 +6,7 @@ import com.codecool.fullstack.oop.java.view.Square;
 import com.codecool.fullstack.oop.java.view.SquareStatus;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Player {
 

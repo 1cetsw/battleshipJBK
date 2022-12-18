@@ -37,6 +37,7 @@ public class Menu {
 
                     break;
                 case 2: //print rules
+                    display.clearscreen();
                     display.printMessages("\033[H\033[2J");
                     System.out.flush();
                     display.gameRules();

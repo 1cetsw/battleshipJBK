@@ -86,11 +86,10 @@ public class Input {
         System.out.println("Player " + GamePlayer + " shoot");
         System.out.println("select row :");
         int row = scanner.nextInt();
-        row--;
-        scanner.nextLine();
+        //row--;
         System.out.println("select col: ");
         int col = scanner.nextInt();
-        col--;
+        //col--;
         return new int[]{row, col};
     }
 
